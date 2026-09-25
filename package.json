@@ -1,0 +1,28 @@
+{
+  "name": "tcc26",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Brlio/tcc26#readme",
+  "bugs": {
+    "url": "https://github.com/Brlio/tcc26/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brlio/tcc26.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "dotenv": "^18.0.4",
+    "drizzle-orm": "^0.45.3"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.11"
+  }
+}
