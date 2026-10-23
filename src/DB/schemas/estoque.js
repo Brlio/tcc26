@@ -1,6 +1,6 @@
-import { integer, pgTable, varchar, text} from "drizzle-orm/pg-core";
+import { integer, pgTable, varchar, text, uuid} from "drizzle-orm/pg-core";
 export const usersTable = pgTable("estoque", {
-  id: varchar().primaryKey(),
+  id: uuid().primaryKey().defaultRandom(),
  nome: varchar().notNull(),
   descrição: text().notNull(),
   usuario_id: varchar().notNull(),
