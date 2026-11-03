@@ -256,7 +256,7 @@ export default function App() {
       <nav>{menu.map(([id, nome]) => <button key={id} className={pagina === id ? 'nav-item active' : 'nav-item'} onClick={() => setPagina(id)}>{nome}</button>)}</nav>
       <div className="sidebar-footer"><span className="avatar">{usuario.nome.slice(0, 1).toUpperCase()}</span><div><strong>{usuario.nome}</strong><small>{usuario.perfil}</small></div></div>
     </aside>
-    <main className="main-area"><header className="topbar"><div><p className="eyebrow">SISTEMA DE ESTOQUE</p><h1>{menu.find(([id]) => id === pagina)?.[1]}</h1></div><button className="button ghost" onClick={sair}>Sair</button></header>
+    <main className="main-area"><header className="topbar"><div><p className="eyebrow">SISTEMA DE ESTOQUE</p><p className="muted">Área de gerenciamento</p></div><button className="button ghost" onClick={sair}>Sair</button></header>
       {erro && <p className="alert error" role="alert">{erro}</p>}
       {aviso && <p className="alert success" role="status">{aviso}</p>}
       {carregandoDados && <p className="muted">Atualizando informações…</p>}
